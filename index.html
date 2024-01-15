@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Start Side Bar -->
+
+    <i class="ri-arrow-left-line"></i>
+
+    <div class="side-bar">
+
+
+        <a href="#" class="logo">
+            <img src="./brandy-logo.png" alt="Brandy logo">
+        </a>
+
+
+
+        <div class="menu">
+            <a href="#" class="active">
+                <span class="icon">
+                    <i class="ri-function-line"></i>
+                    Digital Marketing Bundles
+                </span>
+            </a>
+            <a class="me" href="index2.html">
+                <span class="icon">
+                    <i class="ri-search-line"></i>
+                    Explore
+                </span>
+            </a>
+            <a class="me" href="#">
+                <span class="icon">
+                    <i class="ri-search-line"></i>
+                    Explore
+                </span>
+            </a>
+            <a class="me" href="#">
+                <span class="icon">
+                    <i class="ri-notification-4-line"></i>
+                    Notifications
+                </span>
+            </a>
+            <a class="me" href="#">
+                <span class="icon">
+                    <i class="ri-mail-unread-fill"></i>
+                    Messages
+                </span>
+            </a>
+            <a class="me" href="#">
+                <span class="icon">
+                    <i class="ri-bar-chart-fill"></i>
+                    States
+                </span>
+            </a>
+            <a class="me" href="#">
+                <span class="icon">
+                    <i class="ri-settings-5-line"></i>
+                    Explore
+                </span>
+            </a>
+            <a class="me" href="#">
+                <span class="icon">
+                    <i class="ri-logout-box-r-line"></i>
+                    Explore
+                </span>
+            </a>
+        </div>
+
+
+    </div>
+    <!-- End Side Bar -->
+
+    <div class="wrapper">
+
+        <div class="head">
+
+            <h1>Our Pricing</h1>
+
+            <div class="button2">
+                <h3>Annually</h3>
+                <input type="checkbox" id="toggle" />
+                <label for="toggle" onclick="switchPrice()"></label>
+                <h3 style="margin-left: 30px;">Monthly</h3>
+            </div>
+
+        </div>
+
+        <div class="table">
+
+            <div class="basic">
+
+                <h3 class="head-table">Standard</h3>
+
+                <h1 class="number-monthly same" style="display: none;"><span>EGP</span>8,000</h1>
+                <h1 class="number-annually same"><span>EGP</span>6,000</h1>
+                <div class="line"></div>
+                <h3>-</h3>
+                <div class="line"></div>
+                <h3>2 Managed social media platforms</h3>
+                <div class="line"></div>
+                <h3>10 Published posts</h3>
+                <div class="line"></div>
+                <h3>0 Video motion graphics</h3>
+                <div class="line"></div>
+                <h3>0 Moderation managements</h3>
+                <div class="line"></div>
+                <h3>0 Moderation hours</h3>
+                <div class="line"></div>
+                <h3>Monthly basic report</h3>
+                <div class="line"></div>
+                <h3>Account management</h3>
+                <div class="line"></div>
+                <button class="click two" onclick="tableshow()">Learn More</button>
+
+            </div>
+
+            <div class="professional">
+
+                <h3 class="head-table">Professional</h3>
+
+                <h1 class="number-monthly same" style="display: none;"><span>EGP</span>12,000</h1>
+                <h1 class="number-annually same"><span>EGP</span>9,000</h1>
+                <div class="line"></div>
+                <h3>Basic digital marketing strategy</h3>
+                <div class="line"></div>
+                <h3>3 Managed social media platforms</h3>
+                <div class="line"></div>
+                <h3>16 Published posts</h3>
+                <div class="line"></div>
+                <h3>15 Second video motion graphics</h3>
+                <div class="line"></div>
+                <h3>3 Moderated social channels</h3>
+                <div class="line"></div>
+                <h3>12 Moderation hours per week</h3>
+                <div class="line"></div>
+                <h3>Monthly standard report</h3>
+                <div class="line"></div>
+                <h3>Account management</h3>
+                <div class="line"></div>
+                <button class="click one">Learn More</button>
+
+            </div>
+
+            <div class="basic under2">
+
+                <h3 class="head-table">Business</h3>
+
+                <h1 class="number-monthly same" style="display: none;"><span>EGP</span>20,000</h1>
+                <h1 class="number-annually same"><span>EGP</span>15,000</h1>
+                <div class="line"></div>
+                <h3>Digital marketing strategy</h3>
+                <div class="line"></div>
+                <h3>4 Managed social media platforms</h3>
+                <div class="line"></div>
+                <h3>25 Published posts</h3>
+                <div class="line"></div>
+                <h3>30 Second video motion graphics</h3>
+                <div class="line"></div>
+                <h3>4 Moderated social channels<br>+ Google my Business for one branch</h3>
+                <div class="line"></div>
+                <h3>25 Moderation hours per week</h3>
+                <div class="line"></div>
+                <h3>Monthly Digital Intellignce Performance Reports </h3>
+                <div class="line"></div>
+                <h3>Account management</h3>
+                <div class="line"></div>
+                <button class="click two">Learn More</button>
+
+            </div>
+
+            <div class="basic under">
+
+                <h3 class="head-table">Enterprise</h3>
+
+                <h1 class="number-monthly same" style="display: none;"><span>EGP</span>40,000</h1>
+                <h1 class="number-annually same"><span>EGP</span>30,000</h1>
+                <div class="line"></div>
+                <h3>Advanced digital marketing strategy</h3>
+                <div class="line"></div>
+                <h3>5 Managed social media platforms</h3>
+                <div class="line"></div>
+                <h3>40 Published posts</h3>
+                <div class="line"></div>
+                <h3>45 Second video motion graphics</h3>
+                <div class="line"></div>
+                <h3>5 Moderated social channels<br>+ Google my Business for 3 branches</h3>
+                <div class="line"></div>
+                <h3>36 Moderation hours per week</h3>
+                <div class="line"></div>
+                <h3>Monthly Digital Intellignce Performance Reports </h3>
+                <div class="line"></div>
+                <h3>Account management</h3>
+                <div class="line"></div>
+                <button class="click two">Learn More</button>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="wrapper2" style="display: none;">
+
+            <h1 class="no">Standard bundle</h1>
+
+            <div class="details">
+
+                <div class="left">
+                    <div class="line"></div>
+                    <h1>Digital marketing strategy</h1>
+                    <div class="line"></div>
+                    <h1>Monthly digital marketing report</h1>
+                    <div class="line"></div>
+                    <h1>Digital Action Plan</h1>
+                    <div class="line"></div>
+                    <h1>Social Media Management</h1>
+                    <div class="line"></div>
+                    <h1>Monthly Editorial Calendar for Approval & Scheduling & Publishing</h1>
+                    <div class="line"></div>
+                    <h1>Total Number of Published Posts</h1>
+                    <div class="line"></div>
+                    <h1>Photo Shooting Retouching & Editing</h1>
+                    <div class="line"></div>
+                    <h1>All Types of Content</h1>
+                    <div class="line"></div>
+                    <h1>Content Formates</h1>
+                    <div class="line"></div>
+                    <h1>Social Media Covers</h1>
+                    <div class="line"></div>
+                    <h1>Video Motion Graphic</h1>
+                    <div class="line"></div>
+                    <h1>Moderation Management</h1>
+                    <div class="line"></div>
+                    <h1>Moderation Hrs.</h1>
+                    <div class="line"></div>
+                    <h1>Responding rate</h1>
+                    <div class="line"></div>
+                    <h1>Digital Community Quality Assurance & Check</h1>
+                    <div class="line"></div>
+                    <h1>Digital Crisis Management Strategy</h1>
+                    <div class="line"></div>
+                    <h1>Media Buying Plan</h1>
+                    <div class="line"></div>
+                    <h1>Landing Page Creation</h1>
+                    <div class="line"></div>
+                    <h1>Offers Designs</h1>
+                    <div class="line"></div>
+                    <h1>Ongoing Testing & Quality Assurance & Lead Analysis.</h1>
+                    <div class="line"></div>
+                    <h1>Media Buying Report</h1>
+                    <div class="line"></div>
+                    <h1>Account Manager</h1>
+                    <div class="line"></div>
+                </div>
+    
+                <div class="right">
+                    <div class="line"></div>
+                    <h1>-</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>Only Social</h1>
+                    <div class="line"></div>
+                    <h1>2 Platform</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>10</h1>
+                    <div class="line"></div>
+                    <h1>2 Photos and posting</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>Static Design / Gifs / Photos Retouching/ Reels</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>-</h1>
+                    <div class="line"></div>
+                    <h1>-</h1>
+                    <div class="line"></div>
+                    <h1>-</h1>
+                    <div class="line"></div>
+                    <h1>-</h1>
+                    <div class="line"></div>
+                    <h1>-</h1>
+                    <div class="line"></div>
+                    <h1>-</h1>
+                    <div class="line"></div>
+                    <h1>Excel Sheet</h1>
+                    <div class="line"></div>
+                    <h1>-</h1>
+                    <div class="line"></div>
+                    <h1>-</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>Monthly Basic Report</h1>
+                    <div class="line"></div>
+                    <h1>Account Manager</h1>
+                    <div class="line"></div>
+                </div>
+    
+            </div>
+        </div>
+        
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
