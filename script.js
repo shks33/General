@@ -12,31 +12,31 @@ let annually4 = document.getElementsByClassName('number-annually')[3];
 function switchPrice() {
     if (monthly.hasAttribute('style')) {
         monthly.removeAttribute('style');
-        annually.setAttribute('style','display: none;')
-    }else{
+        annually.setAttribute('style', 'display: none;')
+    } else {
         annually.removeAttribute('style');
-        monthly.setAttribute('style','display: none;')
+        monthly.setAttribute('style', 'display: none;')
     }
-    if (monthly2.hasAttribute('style')){
+    if (monthly2.hasAttribute('style')) {
         monthly2.removeAttribute('style');
-        annually2.setAttribute('style','display: none;')
-    }else{
+        annually2.setAttribute('style', 'display: none;')
+    } else {
         annually2.removeAttribute('style');
-        monthly2.setAttribute('style','display: none;')
+        monthly2.setAttribute('style', 'display: none;')
     }
-    if (monthly3.hasAttribute('style')){
+    if (monthly3.hasAttribute('style')) {
         monthly3.removeAttribute('style');
-        annually3.setAttribute('style','display: none;')
-    }else{
+        annually3.setAttribute('style', 'display: none;')
+    } else {
         annually3.removeAttribute('style');
-        monthly3.setAttribute('style','display: none;')
+        monthly3.setAttribute('style', 'display: none;')
     }
-    if(monthly4.hasAttribute('style')){
+    if (monthly4.hasAttribute('style')) {
         monthly4.removeAttribute('style');
-        annually4.setAttribute('style','display:none;')
-    }else{
+        annually4.setAttribute('style', 'display:none;')
+    } else {
         annually4.removeAttribute('style');
-        monthly4.setAttribute('style','display: none;')
+        monthly4.setAttribute('style', 'display: none;')
     }
 }
 
@@ -52,13 +52,68 @@ button.addEventListener('click', () => {
 
 // Details show
 let mostafa = document.querySelector('.wrapper2');
-let standarad = document.getElementById('standard');
+let standaradbutton = document.getElementById('standard');
+let profbutton = document.getElementById('profbutton');
+let bussbutton = document.getElementById('bussbutton');
+let enterbutton = document.getElementById('enterbutton');
 
-function tableshow(){
+let right = document.getElementById('right');
+let right2 = document.getElementById('right2');
+let right3 = document.getElementById('right3');
+let right4 = document.getElementById('right4');
+
+let no = document.getElementById('no');
+
+function tableshow() {
     if (mostafa.hasAttribute('style')) {
         mostafa.removeAttribute('style');
-        scroll({top:1037,right:0,behavior:'smooth'});
-    }else{
-        mostafa.setAttribute('style','display: none;')
+        scroll({ top: 1037, right: 0, behavior: 'smooth' });
+    } else {
+        scroll({ top: 1037, right: 0, behavior: 'smooth' });
     }
 };
+
+standaradbutton.addEventListener('click', () => {
+
+    if (right.hasAttribute('style')) {
+        no.innerHTML = 'Standard bundle';
+        right.removeAttribute('style');
+        right2.setAttribute('style', 'display: none;');
+        right3.setAttribute('style', 'display: none;');
+        right4.setAttribute('style', 'display: none;');
+    }
+
+});
+profbutton.addEventListener('click', () => {
+
+    if (right2.hasAttribute('style')) {
+        no.innerHTML = 'Professional bundle';
+        right2.removeAttribute('style');
+        right.setAttribute('style', 'display: none;');
+        right3.setAttribute('style', 'display: none;');
+        right4.setAttribute('style', 'display: none;');
+    }
+
+});
+bussbutton.addEventListener('click', () => {
+
+    if (right3.hasAttribute('style')) {
+        no.innerHTML = 'Business bundle';
+        right3.removeAttribute('style');
+        right.setAttribute('style', 'display: none;');
+        right2.setAttribute('style', 'display: none;');
+        right4.setAttribute('style', 'display: none;');
+    }
+
+});
+enterbutton.addEventListener('click', () => {
+
+    if (right4.hasAttribute('style')) {
+        no.innerHTML = 'Enterprise bundle';
+        right4.removeAttribute('style');
+        right.setAttribute('style', 'display: none;');
+        right2.setAttribute('style', 'display: none;');
+        right3.setAttribute('style', 'display: none;');
+    }
+
+});

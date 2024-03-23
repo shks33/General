@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Brandy's bundles</title>
+    <link rel="icon" type="image/x-icon" href="./brandy-logo.png">
     <!-- Remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
@@ -20,7 +21,7 @@
     <div class="side-bar">
 
 
-        <a href="#" class="logo">
+        <a href="https://brandy-agency.com" class="logo">
             <img src="./brandy-logo.png" alt="Brandy logo">
         </a>
 
@@ -35,44 +36,38 @@
             </a>
             <a class="me" href="index2.html">
                 <span class="icon">
-                    <i class="ri-search-line"></i>
-                    Explore
+                    <i class="ri-function-line"></i>
+                    Art Studio Bundles
                 </span>
             </a>
             <a class="me" href="#">
                 <span class="icon">
-                    <i class="ri-search-line"></i>
-                    Explore
+                    <i class="ri-function-line"></i>
+                    Digital Platform Bundles
                 </span>
             </a>
             <a class="me" href="#">
                 <span class="icon">
-                    <i class="ri-notification-4-line"></i>
-                    Notifications
+                    <i class="ri-function-line"></i>
+                    Media Ads Bundles
                 </span>
             </a>
             <a class="me" href="#">
                 <span class="icon">
-                    <i class="ri-mail-unread-fill"></i>
-                    Messages
+                    <i class="ri-function-line"></i>
+                    SEO Bundles
                 </span>
             </a>
             <a class="me" href="#">
                 <span class="icon">
-                    <i class="ri-bar-chart-fill"></i>
-                    States
+                    <i class="ri-function-line"></i>
+                    CX Bundles
                 </span>
             </a>
             <a class="me" href="#">
                 <span class="icon">
-                    <i class="ri-settings-5-line"></i>
-                    Explore
-                </span>
-            </a>
-            <a class="me" href="#">
-                <span class="icon">
-                    <i class="ri-logout-box-r-line"></i>
-                    Explore
+                    <i class="ri-function-line"></i>
+                    Tech Bundles
                 </span>
             </a>
         </div>
@@ -121,7 +116,7 @@
                 <div class="line"></div>
                 <h3>Account management</h3>
                 <div class="line"></div>
-                <button class="click two" onclick="tableshow()">Learn More</button>
+                <button class="click two" id="standard" onclick="tableshow()">Learn More</button>
 
             </div>
 
@@ -148,7 +143,7 @@
                 <div class="line"></div>
                 <h3>Account management</h3>
                 <div class="line"></div>
-                <button class="click one">Learn More</button>
+                <button class="click one" id="profbutton" onclick="tableshow()">Learn More</button>
 
             </div>
 
@@ -175,7 +170,7 @@
                 <div class="line"></div>
                 <h3>Account management</h3>
                 <div class="line"></div>
-                <button class="click two">Learn More</button>
+                <button class="click two" id="bussbutton" onclick="tableshow()">Learn More</button>
 
             </div>
 
@@ -202,7 +197,7 @@
                 <div class="line"></div>
                 <h3>Account management</h3>
                 <div class="line"></div>
-                <button class="click two">Learn More</button>
+                <button class="click two" id="enterbutton" onclick="tableshow()">Learn More</button>
 
             </div>
 
@@ -212,7 +207,7 @@
 
         <div class="wrapper2" style="display: none;">
 
-            <h1 class="no">Standard bundle</h1>
+            <h1 class="no" id="no">Standard bundle</h1>
 
             <div class="details">
 
@@ -263,8 +258,8 @@
                     <h1>Account Manager</h1>
                     <div class="line"></div>
                 </div>
-    
-                <div class="right">
+
+                <div class="right" id="right" style="display: none;">
                     <div class="line"></div>
                     <h1>-</h1>
                     <div class="line"></div>
@@ -311,10 +306,154 @@
                     <h1>Account Manager</h1>
                     <div class="line"></div>
                 </div>
-    
+
+                <div class="right" id="right2" style="display: none;">
+                    <div class="line"></div>
+                    <h1>Basic</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>3 Platform</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>16</h1>
+                    <div class="line"></div>
+                    <h1>3 Photos and posting</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1 style="font-size: 17px;">Static Design / Gifs / Photos Retouching / Video/ Live Reels</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>15s</h1>
+                    <div class="line"></div>
+                    <h1>3 Social channels</h1>
+                    <div class="line"></div>
+                    <h1>12 Hrs. per week</h1>
+                    <div class="line"></div>
+                    <h1>60 mins</h1>
+                    <div class="line"></div>
+                    <h1>Monthly</h1>
+                    <div class="line"></div>
+                    <h1>-</h1>
+                    <div class="line"></div>
+                    <h1>Standard</h1>
+                    <div class="line"></div>
+                    <h1>1</h1>
+                    <div class="line"></div>
+                    <h1>2</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>Monthly Standard Report</h1>
+                    <div class="line"></div>
+                    <h1>Account Manager</h1>
+                    <div class="line"></div>
+                </div>
+
+                <div class="right" id="right3" style="display: none;">
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>4 Platform</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>25</h1>
+                    <div class="line"></div>
+                    <h1>4 Photos and posting</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1 style="font-size: 17px;">Static Designs & templates & Illustrations & Live photo & Videos/ Live Reels</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>30s</h1>
+                    <div class="line"></div>
+                    <h1>4 Social channel + Google my Business for one branch</h1>
+                    <div class="line"></div>
+                    <h1>25 hrs. per week</h1>
+                    <div class="line"></div>
+                    <h1>45 mins</h1>
+                    <div class="line"></div>
+                    <h1>Monthly</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>2</h1>
+                    <div class="line"></div>
+                    <h1>3</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>Monthly Digital Intellignce Performance Reports </h1>
+                    <div class="line"></div>
+                    <h1>Account Manager</h1>
+                    <div class="line"></div>
+                </div>
+
+                <div class="right" id="right4" style="display: none;">
+                    <div class="line"></div>
+                    <h1>Advanced</h1>
+                    <div class="line"></div>
+                    <h1>Monthly Advanced Report</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>5 Platforms</h1>
+                    <div class="line"></div>
+                    <h1>Automated Approval </h1>
+                    <div class="line"></div>
+                    <h1>40</h1>
+                    <div class="line"></div>
+                    <h1>6 Photos and posting</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1 style="font-size: 17px;">Static Designs & templates & Illustrations & Live photo & Videos/ Live Reels</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>45s</h1>
+                    <div class="line"></div>
+                    <h1>5 Social channel + Google my Business for 3 branches</h1>
+                    <div class="line"></div>
+                    <h1>36 hrs. per week</h1>
+                    <div class="line"></div>
+                    <h1>30 mins</h1>
+                    <div class="line"></div>
+                    <h1>Weekly</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>3</h1>
+                    <div class="line"></div>
+                    <h1>5</h1>
+                    <div class="line"></div>
+                    <h1>✔️</h1>
+                    <div class="line"></div>
+                    <h1>Weekly Digital Intellignce Performance Reports</h1>
+                    <div class="line"></div>
+                    <h1>Account Manager</h1>
+                    <div class="line"></div>
+                </div>
+
             </div>
         </div>
-        
+
 
     </div>
 
